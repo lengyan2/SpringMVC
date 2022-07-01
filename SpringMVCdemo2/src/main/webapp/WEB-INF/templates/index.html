@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.orf">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <a th:href="@{/test/testRequestMapping}">test</a>
+ <form th:action="@{/testRequestMapping}" method="post">
+     <input type="submit" value="提交">
+ </form>
+ <a th:href="@{/a1a/testAnt}">测试Ant</a>
+<a th:href="@{/testRest/1/admin}">测试路径占位符 </a>
+ <br>
+ <a th:href="@{/testParam(username='daiyuanjing',password='12345678')}">param测试</a>
+</body>
+</html>
